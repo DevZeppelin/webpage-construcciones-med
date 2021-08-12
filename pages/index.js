@@ -23,7 +23,7 @@ export default function Home({ blogs }) {
       </Head>
       <Layout>
         <section>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xl md:text-lg m-2 md:m-16 px-8 md:px-16 py-8 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg m-2 md:m-16 px-8 md:px-16 py-8 ">
             <div className="space-y-6 text-center">
               <h1 className="font-black text-2xl">
                 REPARAMOS Y REMODELAMOS TU CASA U OFICINA
@@ -36,7 +36,7 @@ export default function Home({ blogs }) {
                 Eléctricos – Pintores – Soldadores – Albañiles – Carpinteros –
                 Gasfitería
               </p>
-              <button className="bg-lightRed p-6 rounded-lg text-white font-bold">
+              <button className="btn">
                 Contáctanos hoy
               </button>
             </div>
@@ -65,7 +65,8 @@ export default function Home({ blogs }) {
         </section>
         <section>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-8 md:m-24 text-center">
-            <div className="my-auto font-bold">
+            <div className="my-auto font-bold flex">
+              <div className="w-3 h-32 bg-red my-auto"></div>
               <p className="text-lg m-6">
                 REPARAMOS O REMODELAMOS TU CASA PARA QUE VIVAS TRANQUILO EN EL
                 ENTORNO QUE DESEAS
@@ -120,13 +121,13 @@ export default function Home({ blogs }) {
                 className=" border-2 border-gray"
               />
             </div>
-            <div className="m-6 space-y-4 md:space-y-8 text-center">
-              <h2 className="font-bold">Nosotros te llamamos</h2>
+            <div className="m-6 space-y-4 md:space-y-4 text-center">
+              <h2 className="font-bold text-lg">Nosotros te llamamos</h2>
               <p>
                 Déjanos tu nombre, teléfono o correo electrónico y nos
                 comunicaremos contigo a la brevedad
               </p>
-              <button className="bg-lightRed p-6 rounded-lg text-white font-bold">
+              <button className="btn">
                 Te Llamamos
               </button>
             </div>
@@ -138,7 +139,7 @@ export default function Home({ blogs }) {
             <p className="text-lg">
               Somos especialistas en servicios de reparación, construcción, ampliación y remodelación para la empresa y el hogar
             </p>
-            <button className="bg-lightRed p-6 rounded-lg text-white font-bold">
+            <button className="btn">
                Reservá una visita con nosotros
               </button>
 

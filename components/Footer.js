@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-lg" >
-          <h2 className="font-extrabold">Datos de contacto</h2>
+          <h2 className="font-extrabold">¡Contactanos hoy!</h2>
           <MainBarButton
             logo={
               <FaWhatsapp className="text-red text-2xl flex my-auto m-2" />
@@ -71,7 +71,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="p-4 text-sm bg-black">
-        Make with &#128153; in Mendoza, Argentina, by Gino Pietrobon. All rights
+        Make with &#128153; in Mendoza, Argentina, by <a href="https://moonblog.ar" target="_blank" rel="noopener">Gino Pietrobon</a>. All rights
         reserved. &copy; &nbsp; {new Date().getFullYear()}
       </div>
     </div>

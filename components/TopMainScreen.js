@@ -30,7 +30,7 @@ const TopMainScreen = () => {
           classType="text-red"
         />
 
-        <div className="bg-red font-bold p-4 text-xl my-auto text-white cursor-pointer">
+        <div className="rounded-lg p-4 text-xl my-auto btn">
           Te llamamos
         </div>
       </div>

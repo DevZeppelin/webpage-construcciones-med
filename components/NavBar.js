@@ -39,13 +39,13 @@ const NavBar = ({ toggleNav }) => {
       </div>
 
       <div className=" flex justify-end">
-        <div className="bg-red w-16 md:w-64 transform skew-x-12 m-0 translate-x-4"></div>        
-        <div className="md:hidden bg-red w-16 md:w-64 transform  m-0 md:translate-x-4"></div>        
+        <div className="bg-red w-16 md:w-64 transform skew-x-12 m-0 translate-x-4 md:translate-x-64 overflow-hidden"></div>        
+        <div className=" bg-red w-16 md:w-64 transform  m-0 md:translate-x-4 overflow-hidden"></div>        
       </div>
     </div>
   );
 };
 
-/*  */
+/* md:hidden */
 
 export default NavBar;

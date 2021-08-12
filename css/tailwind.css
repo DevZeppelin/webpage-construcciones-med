@@ -1,7 +1,34 @@
 /* purgecss start ignore */
 @import "tailwindcss/base";
 /* purgecss end ignore */
-
 @import "tailwindcss/components";
-
 @import "tailwindcss/utilities";
+
+.btn {
+    @apply bg-red p-4 rounded-lg text-white font-bold ;
+}
+
+.btn:hover {
+    @apply bg-gray font-extrabold transform -translate-y-2 transition duration-500 cursor-pointer;
+}
+
+/* 
+Example media queryes
+
+@screen xs {
+    .stories-image {
+      @apply w-16 h-16;
+    }
+  }
+  
+  @screen sm {
+    .stories-image {
+      @apply w-16 h-16;
+    }
+  }
+  
+  @screen md {
+    .stories-image {
+      @apply w-24 h-24;
+    }
+  } */
