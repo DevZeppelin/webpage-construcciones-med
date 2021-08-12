@@ -73,7 +73,7 @@ export default function Layout({ children }) {
             target="_blank"
             rel="noopener"
           >
-            Videos 📽
+            Videos
           </a>
 
           <Link href="/contacto">
