@@ -18,7 +18,10 @@ module.exports = {
             },
             fontFamily : {
                 body : ['Nunito']
-            }
+            },
+            backgroundImage: theme => ({
+                'hero': "url('/01-sm.png')",                
+               })
         },
     },
     

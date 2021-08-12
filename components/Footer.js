@@ -32,7 +32,7 @@ const Footer = () => {
           <FiMail className="text-red text-2xl flex my-auto m-2" />
         }
           text="Correo electrónico"
-          description="construccionesmed@gmail.com"
+          description="construmed@gmail.com"
           classType=""
         />
         </div>
