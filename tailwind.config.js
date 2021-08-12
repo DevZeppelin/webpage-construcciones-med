@@ -23,6 +23,10 @@ module.exports = {
                 'hero': "url('/01-sm.png')",                
                })
         },
+        grayscale: {
+            100: '100%',
+        },
+        grayscale: ['hover']
     },
     
     variants: {

@@ -33,15 +33,13 @@ export default function Home({ blogs }) {
                 {" "}
                 Somos una empresa dedicada a la reparación, construcción,
                 remodelación y mantención. Realizamos trabajos para oficinas,
-                empresas y para el hogar. <b>
-                  Construcción de obras menores –
-                  Eléctricos – Pintores – Soldadores – Albañiles – Carpinteros –
-                  Gasfitería
+                empresas y para el hogar.{" "}
+                <b>
+                  Construcción de obras menores – Eléctricos – Pintores –
+                  Soldadores – Albañiles – Carpinteros – Gasfitería
                 </b>
               </p>
-              <button className="btn">
-                Contáctanos hoy
-              </button>
+              <button className="btn">Contáctanos hoy</button>
             </div>
             <div>
               <img
@@ -75,53 +73,64 @@ export default function Home({ blogs }) {
                 ENTORNO QUE DESEAS
               </p>
             </div>
-            <div>
+            <div className="relative">
+              <div className="indexGridContainer">
+                <div className="indexGridImage">Construcción en general</div>
+                <img
+                  src="01-sm.png"
+                  alt="building icon logo construcciones med"
+                  className=" border-2 border-gray imagen-filtro"
+                />
+              </div>
+            </div>
+            <div className="relative">
+              <div className="indexGridImage">Servicio de albañilería</div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray"
+                className=" border-2 border-gray imagen-filtro"
               />
             </div>
-            <div>
+            <div className="relative">
+              <div className="indexGridImage">
+                Remodelaciones y ampliaciones
+              </div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray"
+                className=" border-2 border-gray imagen-filtro"
               />
             </div>
-            <div>
+            <div className="relative">
+              <div className="indexGridImage">Servicio de Pintura</div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray"
+                className=" border-2 border-gray imagen-filtro"
               />
             </div>
-            <div>
+            <div className="relative">
+              <div className="indexGridImage">Servicio de Soldadura</div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray"
+                className=" border-2 border-gray imagen-filtro"
               />
             </div>
-            <div>
+            <div className="relative">
+              <div className="indexGridImage">Servicios Eléctricos</div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray"
+                className=" border-2 border-gray imagen-filtro"
               />
             </div>
-            <div>
+            <div className="relative">
+              <div className="indexGridImage">Servicios de Plomería</div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray"
-              />
-            </div>
-            <div>
-              <img
-                src="01-sm.png"
-                alt="building icon logo construcciones med"
-                className=" border-2 border-gray"
+                className=" border-2 border-gray imagen-filtro"
               />
             </div>
             <div className="m-6 space-y-4 md:space-y-4 text-center">
@@ -130,22 +139,23 @@ export default function Home({ blogs }) {
                 Déjanos tu nombre, teléfono o correo electrónico y nos
                 comunicaremos contigo a la brevedad
               </p>
-              <button className="btn">
-                Te Llamamos
-              </button>
+              <button className="btn">Te Llamamos</button>
             </div>
           </div>
         </section>
         <section>
-          <div className="p-8 md:p-32 py-32 space-y-6 font-bold text-black text-center bg-cover bg-hero bg-fixed">
-            <h2 className="text-2xl">Empresa de Servicios Generales en Mendoza</h2>
-            <p className="text-lg">
-              Somos especialistas en servicios de reparación, construcción, ampliación y remodelación para la empresa y el hogar
-            </p>
-            <button className="btn">
-               Reservá una visita con nosotros
-              </button>
-
+          <div className="p-8 md:p-32 py-32  font-bold text-black text-center bg-cover bg-hero bg-fixed grid grid-cols-1 md:grid-cols-2">
+            <div></div>
+            <div className="space-y-6">
+              <h2 className="text-2xl">
+                Empresa de Servicios Generales en Mendoza
+              </h2>
+              <p className="text-lg">
+                Somos especialistas en servicios de reparación, construcción,
+                ampliación y remodelación para la empresa y el hogar
+              </p>
+              <button className="btn">Reservá una visita con nosotros</button>
+            </div>
           </div>
         </section>
         <section>
@@ -195,7 +205,15 @@ export default function Home({ blogs }) {
         </section>
 
         {/* CSS Puro */}
-        <style jsx>{``}</style>
+        <style jsx>{`
+          .imagen-filtro {
+            transition: all 0.4s ease;
+          }
+          .imagen-filtro:hover {
+            -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+            filter: grayscale(100%);
+          }
+        `}</style>
       </Layout>
     </div>
   );
