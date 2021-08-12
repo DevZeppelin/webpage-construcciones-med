@@ -11,3 +11,7 @@
 .btn:hover {
     @apply bg-gray font-extrabold transform -translate-y-2 transition duration-500 cursor-pointer;
 }
+
+.service-h2 {
+    @apply text-lg text-black font-bold mb-2;
+}

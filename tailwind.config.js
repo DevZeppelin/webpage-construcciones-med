@@ -12,12 +12,12 @@ module.exports = {
                 lightRed: '#E83838',
                 gray: '#545454',
                 darkGray: '#333',
-                lowContrast: '#E7E7E7' ,
+                lowContrast: '#D6D6D6' ,
                 background: '#d6d4d4',
                 backgroundSecundary: '#608b9b'
             },
             fontFamily : {
-                body : ['Nunito']
+                body : ['Heebo']
             },
             backgroundImage: theme => ({
                 'hero': "url('/01-sm.png')",                
