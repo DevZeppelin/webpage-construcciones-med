@@ -1,10 +1,9 @@
-import Link from "next/dist/client/link"
-import { GiHamburgerMenu } from "react-icons/gi"
+import Link from "next/dist/client/link";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-const NavBar = ({toggleNav}) => {
-    return (
-        
-      <div className="flex py-2 md:py-0 justify-between px-4 md:px-0 bg-secundary text-white text-2xl">
+const NavBar = ({ toggleNav }) => {
+  return (
+    <div className="flex my-0 md:py-0 justify-between px-0 bg-secundary text-white text-2xl">
       <div className="hidden md:flex">
         <div className="w-32"></div>
         <Link href="/">
@@ -30,7 +29,7 @@ const NavBar = ({toggleNav}) => {
           <a className="px-3 hover:bg-red py-6">Contactanos</a>
         </Link>
       </div>
-      <div className="p-2 md:hidden flex justify-start w-10 text-4xl">
+      <div className="p-2 ml-2 md:hidden flex justify-start w-10 text-4xl">
         <button
           onClick={toggleNav}
           aria-label="Hamburguer Button of Main Content"
@@ -39,9 +38,14 @@ const NavBar = ({toggleNav}) => {
         </button>
       </div>
 
-      <div className="bg-red md:w-64 transform skew-x-12 translate-x-4"></div>
+      <div className=" flex justify-end">
+        <div className="bg-red w-16 md:w-64 transform skew-x-12 m-0 translate-x-4"></div>        
+        <div className="md:hidden bg-red w-16 md:w-64 transform  m-0 md:translate-x-4"></div>        
+      </div>
     </div>
-    )
-}
+  );
+};
 
-export default NavBar
+/*  */
+
+export default NavBar;

@@ -11,7 +11,7 @@ const WhatsappIcon = () => {
         alt="building icon logo construcciones med"
         height="60"
         width="60"
-        className="fixed bottom-10 right-10 cursor-pointer"
+        className="fixed bottom-4 md:bottom-10 right-4 md:right-10 cursor-pointer"
       />
     </a>
   );
