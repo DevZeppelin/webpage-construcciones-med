@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const NavBar = ({ toggleNav }) => {
   return (
-    <div className="flex my-0 md:py-0 justify-between px-0 bg-secundary text-white text-2xl">
+    <div className="flex my-0 md:py-0 justify-between px-0 bg-secundary text-white text-xl">
       <div className="hidden md:flex">
         <div className="w-32"></div>
         <Link href="/">

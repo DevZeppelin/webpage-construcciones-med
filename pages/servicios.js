@@ -1,6 +1,11 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import { FaTools } from "react-icons/fa";
+import { AiOutlineBuild } from "react-icons/ai";
+import { RiBuilding2Line } from "react-icons/ri";
+import { MdBuild } from "react-icons/md"
+import { IoIosBulb } from "react-icons/io"
+import { GiBoltBomb } from "react-icons/gi"
 
 const Servicios = () => {
   return (
@@ -43,7 +48,7 @@ const Servicios = () => {
                   <div className="xl:w-1/3 md:w-1/2 p-4">
                     <div className=" text-center hover:bg-lowContrast hover:text-black border border-gray-700 border-opacity-75 p-6 rounded-lg">
                       <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4">
-                      <FaTools className="mx-auto text-3xl text-red"/>
+                      <AiOutlineBuild className="mx-auto text-3xl text-red"/>
                       </div>
                       <h2 className="service-h2">
                        Ampliaciones
@@ -57,7 +62,7 @@ const Servicios = () => {
                   <div className="xl:w-1/3 md:w-1/2 p-4">
                     <div className="text-center hover:bg-lowContrast hover:text-black border border-gray-700 border-opacity-75 p-6 rounded-lg">
                       <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4">
-                      <FaTools className="mx-auto text-3xl text-red"/>
+                      <RiBuilding2Line className="mx-auto text-3xl text-red"/>
                       </div>
                       <h2 className="service-h2">
                         Remodelaciones
@@ -71,7 +76,7 @@ const Servicios = () => {
                   <div className="xl:w-1/3 md:w-1/2 p-4">
                     <div className="text-center hover:bg-lowContrast hover:text-black border border-gray-700 border-opacity-75 p-6 rounded-lg">
                       <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4">
-                      <FaTools className="mx-auto text-3xl text-red"/>
+                      <MdBuild className="mx-auto text-3xl text-red"/>
                       </div>
                       <h2 className="service-h2">
                         Construcción en seco
@@ -85,7 +90,7 @@ const Servicios = () => {
                   <div className="xl:w-1/3 md:w-1/2 p-4">
                     <div className="text-center hover:bg-lowContrast hover:text-black border border-gray-700 border-opacity-75 p-6 rounded-lg">
                       <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4">
-                      <FaTools className="mx-auto text-3xl text-red"/>
+                      <IoIosBulb className="mx-auto text-3xl text-red"/>
                       </div>
                       <h2 className="service-h2">
                        Plomería y electricidad
@@ -99,7 +104,7 @@ const Servicios = () => {
                   <div className="xl:w-1/3 md:w-1/2 p-4">
                     <div className="border border-gray-700 border-opacity-75 p-6 rounded-lg hover:bg-lowContrast hover:text-black text-center">
                       <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4">
-                      <FaTools className="mx-0 text-3xl text-red"/>
+                      <GiBoltBomb className="mx-0 text-3xl text-red"/>
                       </div>
                       <h2 className="service-h2">
                        Demoliciones
