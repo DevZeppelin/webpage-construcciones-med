@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import SectionWelcome from "../components/sections/SectionWelcome";
 import { BsFillPersonCheckFill } from "react-icons/bs";
 import { FaRecycle, FaUserCog } from "react-icons/fa";
 import { AiOutlineStar } from "react-icons/ai";
@@ -22,40 +23,13 @@ export default function Home({ blogs }) {
         <meta name="author" content="Gino Pietrobon" />
       </Head>
       <Layout>
+        <SectionWelcome />
         <section>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg m-2 md:m-16 px-8 md:px-16 py-8 ">
-            <div className="space-y-6 text-center">
-              <h1 className="font-black text-2xl md:text-3xl">
-                REPARAMOS Y REMODELAMOS TU CASA U OFICINA
-              </h1>
-              <div className="h-1 w-64 bg-red mx-auto"></div>
-              <p>
-                {" "}
-                Somos una empresa dedicada a la reparación, construcción,
-                remodelación y mantención. Realizamos trabajos para oficinas,
-                empresas y para el hogar.{" "}
-                <b>
-                  Construcción de obras menores – Eléctricos – Pintores –
-                  Soldadores – Albañiles – Carpinteros – Gasfitería
-                </b>
-              </p>
-              <button className="btn">Contáctanos hoy</button>
-            </div>
-            <div>
-              <img
-                src="01-sm.png"
-                alt="building icon logo construcciones med"
-                className=" border-2 border-gray"
-              />
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className="space-y-4 text-center p-12 md:p-16 px-8 md:px-32 pt-8 bg-lowContrast">
-            <h1 className="font-bold  text-xl">
+          <div className="space-y-2 text-center p-12 px-8 md:px-32 pt-8 bg-lowContrast">
+            <h1 className="font-bold text-2xl tracking-wider text-gray">
               NO ESPERE A QUE LOS PRECIOS SUBAN O EL PROBLEMA SEA MAYOR
             </h1>
-            <p className="text-xl">
+            <p className="">
               Contamos con personal calificado para construir proyectos que den
               valor agregado a su patrimonio, mejorar una imagen, solución
               rápida de un problema. Atendemos a empresas, locales comerciales,
@@ -134,7 +108,7 @@ export default function Home({ blogs }) {
               />
             </div>
             <div className="m-6 space-y-4 md:space-y-4 text-center">
-              <h2 className="font-bold text-lg">Nosotros te llamamos</h2>
+              <h2 className="font-bold text-xl font-prompt">Nosotros te llamamos!</h2>
               <p>
                 Déjanos tu nombre, teléfono o correo electrónico y nos
                 comunicaremos contigo a la brevedad
@@ -147,20 +121,20 @@ export default function Home({ blogs }) {
           <div className="p-8 md:p-32 py-32  font-bold text-black text-center bg-cover bg-hero bg-fixed grid grid-cols-1 md:grid-cols-2">
             <div></div>
             <div className="space-y-6">
-              <h2 className="text-2xl">
+              <h2 className="text-3xl font-prompt">
                 Empresa de Servicios Generales en Mendoza
               </h2>
               <p className="text-lg">
                 Somos especialistas en servicios de reparación, construcción,
                 ampliación y remodelación para la empresa y el hogar
               </p>
-              <button className="btn">Reservá una visita con nosotros</button>
+              <button className="btn uppercase">Reservá una visita con nosotros</button>
             </div>
           </div>
         </section>
         <section>
           <div className="text-center pt-16">
-            <h2 className="text-2xl font-bold pb-12">¿Por qué elegirnos?</h2>
+            <h2 className="text-3xl font-bold pb-12 font-prompt">¿Por qué elegirnos?</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 md:px-32 pb-16 ">
               <div className="space-y-8 pb-6">
                 <BsFillPersonCheckFill className="text-4xl text-red mx-auto" />

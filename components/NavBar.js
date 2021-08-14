@@ -5,9 +5,9 @@ const NavBar = ({ toggleNav }) => {
   return (
     <div className="flex my-0 md:py-0 justify-between px-0 bg-secundary text-white text-xl">
       <div className="hidden md:flex">
-        <div className="w-32"></div>
+        
         <Link href="/">
-          <a className="bg-red px-3 py-6">Home</a>
+          <a className="bg-red px-3 ml-24 py-6">Home</a>
         </Link>
         <Link href="/quienesSomos">
           <a className="px-3 hover:bg-red py-6">Quienes somos</a>
@@ -39,8 +39,8 @@ const NavBar = ({ toggleNav }) => {
       </div>
 
       <div className=" flex justify-end">
-        <div className="bg-red w-16 md:w-64 transform skew-x-12 m-0 translate-x-4 md:translate-x-64 overflow-hidden"></div>        
-        <div className=" bg-red w-16 md:w-64 transform  m-0 md:translate-x-4 overflow-hidden"></div>        
+        <div className="bg-red w-16 md:w-64 transform skew-x-12 m-0 translate-x-12 md:translate-x-56 overflow-hidden"></div>        
+        <div className=" bg-red w-16 md:w-64 transform  m-0 overflow-hidden"></div>        
       </div>
     </div>
   );

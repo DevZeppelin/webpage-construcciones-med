@@ -4,9 +4,9 @@ import { FiYoutube } from "react-icons/fi";
 
 const TopLeyend = () => {
   return (
-    <div className="flex justify-center md:justify-between py-2 text-gray md:bg-lowContrast">
+    <div className="flex justify-center md:justify-between pt-2 text-darkGray md:bg-lowContrast">
       <div className="hidden md:flex px-12">
-        <p className="text-base font-bold">
+        <p className="text-sm font-bold tracking-widest my-auto font-prompt uppercase">
           No construimos, hacemos tus sueños realidad
         </p>
       </div>
