@@ -49,65 +49,65 @@ export default function Home({ blogs }) {
             </div>
             <div className="relative">
               <div className="indexGridContainer">
-                <div className="indexGridImage">Construcción en general</div>
+                <div className="indexGridImageText">Construcción en general</div>
                 <img
                   src="01-sm.png"
                   alt="building icon logo construcciones med"
-                  className=" border-2 border-gray imagen-filtro"
+                  className="gridImage imagen-filtro"
                 />
               </div>
             </div>
             <div className="relative">
-              <div className="indexGridImage">Servicio de albañilería</div>
+              <div className="indexGridImageText">Servicio de albañilería</div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray imagen-filtro"
+                className="gridImage imagen-filtro"
               />
             </div>
             <div className="relative">
-              <div className="indexGridImage">
+              <div className="indexGridImageText">
                 Remodelaciones y ampliaciones
               </div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray imagen-filtro"
+                className="gridImage imagen-filtro"
               />
             </div>
             <div className="relative">
-              <div className="indexGridImage">Servicio de Pintura</div>
+              <div className="indexGridImageText">Servicio de Pintura</div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray imagen-filtro"
+                className="gridImage imagen-filtro"
               />
             </div>
             <div className="relative">
-              <div className="indexGridImage">Servicio de Soldadura</div>
+              <div className="indexGridImageText">Servicio de Soldadura</div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray imagen-filtro"
+                className="gridImage imagen-filtro"
               />
             </div>
             <div className="relative">
-              <div className="indexGridImage">Servicios Eléctricos</div>
+              <div className="indexGridImageText">Servicios Eléctricos</div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray imagen-filtro"
+                className="gridImage imagen-filtro"
               />
             </div>
             <div className="relative">
-              <div className="indexGridImage">Servicios de Plomería</div>
+              <div className="indexGridImageText">Servicios de Plomería</div>
               <img
                 src="01-sm.png"
                 alt="building icon logo construcciones med"
-                className=" border-2 border-gray imagen-filtro"
+                className="gridImage imagen-filtro"
               />
             </div>
-            <div className="m-6 space-y-4 md:space-y-4 text-center">
+            <div className="m-6 space-y-4 md:space-y-4 text-center my-auto">
               <h2 className="font-bold text-xl font-prompt">Nosotros te llamamos!</h2>
               <p>
                 Déjanos tu nombre, teléfono o correo electrónico y nos

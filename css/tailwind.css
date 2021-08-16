@@ -16,6 +16,10 @@
     @apply text-lg text-black font-bold mb-2;
 }
 
-.indexGridImage {
+.indexGridImageText {
     @apply w-full text-white border-b-2 border-red h-10 absolute bg-gray bottom-0 z-10 py-3 hover:bg-red uppercase font-bold transition duration-500;
+}
+
+.gridImage {
+    @apply  border-2 border-gray w-full;
 }
