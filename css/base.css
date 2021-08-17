@@ -11,6 +11,9 @@ body {
 h1 {
   font-family: "Prompt", sans-serif;
 }
+h2 {
+  font-family: "Prompt", sans-serif;
+}
 
 html {
   scroll-behavior: smooth;

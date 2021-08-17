@@ -5,7 +5,7 @@ import { BsFillPersonCheckFill } from "react-icons/bs";
 import { FaRecycle, FaUserCog } from "react-icons/fa";
 import { AiOutlineStar } from "react-icons/ai";
 
-export default function Home({ blogs }) {
+export default function Home({ }) {
   return (
     <div>
       <Head>
@@ -22,7 +22,7 @@ export default function Home({ blogs }) {
         />
         <meta name="author" content="Gino Pietrobon" />
       </Head>
-      <Layout>
+      <Layout classHome={"bg-red"}>
         <SectionWelcome />
         <section>
           <div className="space-y-2 text-center p-12 px-8 md:px-32 pt-8 bg-lowContrast">

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import MainBarButton from "../components/MainBarButton";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 const Contacto = () => {
@@ -11,33 +11,43 @@ const Contacto = () => {
         <title>Contacto</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
-        <div className="bg-hero bg-cover bg-fixed text-center py-24">
+      <Layout classContacto={"bg-red"}>
+        <div className="bg-hero bg-cover text-center py-28">
           <h1 className="text-4xl font-bold">Contactanos</h1>
         </div>
-        <div className="text-center space-y-6 pt-8">
+        <div className="text-center space-y-6 pt-12">
           <h2 className="text-2xl font-bold">Trabajá con profesionales</h2>
-          <p className="text-lg">
+          <p className="text-lg p-4">
             ¿Necesita trabajos en su hogar o empresa? Construcciones MED, es la
             alternativa a tu alcance. Contáctenos hoy!
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8 md:p-16 md:pl-40 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 p-6 ">
             <div>
               <MainBarButton
                 logo={
-                  <FaWhatsapp className="text-red text-4xl flex my-auto m-2" />
+                  <FaPhone className="text-red text-6xl flex my-auto m-4" />
                 }
-                text="Whatsapp Chat"
+                text="Llamadas"
                 description="+5492616502121"
-                classType="text-red text-2xl"
+                classType="text-red text-2xl my-2"
               />
             </div>
             <div>
               <MainBarButton
-                logo={<FiMail className="text-red text-4xl flex my-auto m-2" />}
+                logo={
+                  <FaWhatsapp className="text-red text-6xl flex my-auto m-4" />
+                }
+                text="Whatsapp Chat"
+                description="+5492616502121"
+                classType="text-red text-2xl my-2"
+              />
+            </div>
+            <div>
+              <MainBarButton
+                logo={<FiMail className="text-red text-6xl flex my-auto m-4" />}
                 text="Correo electrónico"
                 description="construccionesmed@gmail.com"
-                classType="text-red text-2xl"
+                classType="text-red text-2xl my-2"
               />
             </div>
           </div>

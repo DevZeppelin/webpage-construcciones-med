@@ -1,19 +1,19 @@
 import Link from "next/dist/client/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const NavBar = ({ toggleNav }) => {
+const NavBar = ({ toggleNav, classHome, classQuienesSomos, classServicios, classContacto }) => {
   return (
     <div className="flex my-0 md:py-0 justify-between px-0 bg-secundary text-white text-xl">
       <div className="hidden md:flex">
         
         <Link href="/">
-          <a className="bg-red px-3 ml-24 py-6">Home</a>
+          <a className={`px-3 hover:bg-red ml-24 py-6 ${classHome}`}>Home</a>
         </Link>
         <Link href="/quienesSomos">
-          <a className="px-3 hover:bg-red py-6">Quienes somos</a>
+          <a className={`px-3 hover:bg-red py-6 ${classQuienesSomos}`}>Quienes somos</a>
         </Link>
         <Link href="/servicios">
-          <a className="px-3 hover:bg-red py-6">Servicios</a>
+          <a className={`px-3 hover:bg-red py-6 ${classServicios}`}>Servicios</a>
         </Link>
 
         <a
@@ -26,7 +26,7 @@ const NavBar = ({ toggleNav }) => {
         </a>
 
         <Link href="/contacto">
-          <a className="px-3 hover:bg-red py-6">Contactanos</a>
+          <a className={`px-3 hover:bg-red py-6 ${classContacto}`}>Contactanos</a>
         </Link>
       </div>
       <div className="p-2 ml-2 md:hidden flex justify-start w-10 text-4xl">

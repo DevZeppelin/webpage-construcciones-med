@@ -6,7 +6,7 @@ import NavBar from "./NavBar";
 import MobileNavBar from "./MobileNavBar";
 import WhatsappIcon from "./WhatsappIcon";
 
-export default function Layout({ children }) {
+export default function Layout({ children, classHome, classQuienesSomos, classServicios, classContacto }) {
   const [open, setOpen] = useState(false);
 
   const toggleNav = (e) => {
@@ -18,7 +18,7 @@ export default function Layout({ children }) {
     <div>
       <TopLeyend />
       <TopMainScreen />
-      <NavBar toggleNav={toggleNav} />
+      <NavBar toggleNav={toggleNav} classHome={classHome} classQuienesSomos={classQuienesSomos} classServicios={classServicios} classContacto={classContacto} />
       <MobileNavBar open={open} />
 
       {children}

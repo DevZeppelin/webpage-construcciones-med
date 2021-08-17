@@ -3,7 +3,7 @@ import Link from "next/dist/client/link";
 const MobileNavBar = ({ open }) => {
   return (
     <div
-      className="absolute z-20 right-0 font-bold bg-secundary text-background w-3/4 rounded-b-3xl"
+      className="absolute z-50 right-0 font-bold bg-secundary text-background w-3/5 rounded-b-3xl"
       style={{ display: open ? "block" : "none" }}
     >
       <div className="flex text-right flex-col text-base p-2 text-background mb-5">

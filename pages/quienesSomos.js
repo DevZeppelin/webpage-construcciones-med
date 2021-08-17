@@ -10,9 +10,9 @@ const QuienesSomos = () => {
         <title>Quienes Somos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
+      <Layout classQuienesSomos={"bg-red"}>
         <section>
-          <div className="bg-hero bg-cover bg-fixed text-center py-32">
+          <div className="bg-hero bg-cover text-center py-28">
             <h1 className="text-4xl font-bold">Quienes Somos</h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-8">

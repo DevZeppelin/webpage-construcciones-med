@@ -14,9 +14,9 @@ const Servicios = () => {
         <title>Servicios</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
+      <Layout classServicios={"bg-red"}>
         <div>
-          <div className="bg-hero bg-cover bg-fixed text-center py-32">
+          <div className="bg-hero bg-cover text-center py-28">
             <h1 className="text-4xl font-bold">Servicios</h1>
           </div>
           <div>
