@@ -33,22 +33,36 @@ const Contacto = () => {
               />
             </div>
             <div>
-              <MainBarButton
-                logo={
-                  <FaWhatsapp className="text-red text-6xl flex my-auto m-4" />
-                }
-                text="Whatsapp Chat"
-                description="+5492616502121"
-                classType="text-red text-2xl my-2"
-              />
+              <a
+                href="https://api.whatsapp.com/send?phone=5492616708100"
+                target="_blank"
+                rel="noopener"
+              >
+                <MainBarButton
+                  logo={
+                    <FaWhatsapp className="text-red text-6xl flex my-auto m-4" />
+                  }
+                  text="Whatsapp Chat"
+                  description="+5492616502121"
+                  classType="text-red text-2xl my-2"
+                />
+              </a>
             </div>
             <div>
-              <MainBarButton
-                logo={<FiMail className="text-red text-6xl flex my-auto m-4" />}
-                text="Correo electrónico"
-                description="construccionesmed@gmail.com"
-                classType="text-red text-2xl my-2"
-              />
+              <a
+                href="mailto:construmed@gmail.com"
+                target="_blank"
+                rel="noopener"
+              >
+                <MainBarButton
+                  logo={
+                    <FiMail className="text-red text-6xl flex my-auto m-4" />
+                  }
+                  text="Correo electrónico"
+                  description="construccionesmed@gmail.com"
+                  classType="text-red text-2xl my-2"
+                />
+              </a>
             </div>
           </div>
         </div>
