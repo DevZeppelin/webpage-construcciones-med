@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Link from "next/dist/client/link";
 
 const SectionWelcome = () => {
   let radio1 = useRef();
@@ -26,7 +27,7 @@ const SectionWelcome = () => {
     <section>
       <div>
         <div className="flex relative overflow-hidden md:grid md:grid-cols-2 text-lg px-8 md:px-24 bg-lightGray background-overlay">
-          <div className="space-y-4 md:space-y-5 p-10 my-auto bg-white z-40 opacity-80 md:opacity-100 h-full">
+          <div className="first-block space-y-4 md:space-y-5 p-10 my-auto bg-white z-40 opacity-80 md:opacity-100 h-full">
             <h1 className="font-black text-2xl md:text-4xl font-prompt">
               REPARAMOS Y REMODELAMOS TU CASA U OFICINA
             </h1>
@@ -41,7 +42,7 @@ const SectionWelcome = () => {
                 Soldadores – Albañiles – Carpinteros – Gasfitería
               </b>
             </p>
-            <button className="btn">Contáctanos hoy</button>
+            <Link href="/contacto"><button className="btn">Contáctanos hoy</button></Link>
           </div>
           <div className="slider-body flex-wrap absolute bottom-0 left-0 h-full md:relative md:h-auto">
             <div className="slider">

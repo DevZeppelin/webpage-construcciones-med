@@ -112,3 +112,22 @@
 #radio4:checked ~ .navigation-auto .auto-btn4 {
   background: black;
 }
+
+.first-block {
+  animation-duration: 1s;
+  animation-name: translate;
+
+}
+
+@keyframes translate {
+
+  from {
+    transform: translateX(-400px);
+    opacity: 50%;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 85%;
+  }
+}

@@ -30,9 +30,9 @@ const TopMainScreen = () => {
           classType="text-red"
         />
 
-        <div className="rounded-lg p-4 text-xl my-auto btn">
-          Te llamamos
-        </div>
+        <Link href="/contacto">
+          <div className="rounded-lg p-4 text-xl my-auto btn">Te llamamos</div>
+        </Link>
       </div>
     </div>
   );

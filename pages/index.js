@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/dist/client/link";
 import Layout from "../components/Layout";
 import SectionWelcome from "../components/sections/SectionWelcome";
 import { BsFillPersonCheckFill } from "react-icons/bs";
@@ -113,7 +114,7 @@ export default function Home({ }) {
                 Déjanos tu nombre, teléfono o correo electrónico y nos
                 comunicaremos contigo a la brevedad
               </p>
-              <button className="btn">Te Llamamos</button>
+              <Link href="/contacto"><button className="btn">Te Llamamos</button></Link>
             </div>
           </div>
         </section>
@@ -128,7 +129,7 @@ export default function Home({ }) {
                 Somos especialistas en servicios de reparación, construcción,
                 ampliación y remodelación para la empresa y el hogar
               </p>
-              <button className="btn uppercase">Reservá una visita con nosotros</button>
+              <Link href="/contacto"><button className="btn uppercase">Reservá una visita con nosotros</button></Link>
             </div>
           </div>
         </section>
