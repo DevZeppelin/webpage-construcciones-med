@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import MainBarButton from "../components/MainBarButton";
 import { FaPhone, FaWhatsapp } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import Fade from "react-reveal/Fade";
 
 const Contacto = () => {
   return (
@@ -22,48 +23,54 @@ const Contacto = () => {
             alternativa a tu alcance. Contáctenos hoy!
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 p-6 ">
-            <div>
-              <MainBarButton
-                logo={
-                  <FaPhone className="text-red text-6xl flex my-auto m-4" />
-                }
-                text="Llamadas"
-                description="+5492616502121"
-                classType="text-red text-2xl my-2"
-              />
-            </div>
-            <div>
-              <a
-                href="https://api.whatsapp.com/send?phone=5492616708100"
-                target="_blank"
-                rel="noopener"
-              >
+            <Fade big>
+              <div>
                 <MainBarButton
                   logo={
-                    <FaWhatsapp className="text-red text-6xl flex my-auto m-4" />
+                    <FaPhone className="text-red text-6xl flex my-auto m-4" />
                   }
-                  text="Whatsapp Chat"
+                  text="Llamadas"
                   description="+5492616502121"
                   classType="text-red text-2xl my-2"
                 />
-              </a>
-            </div>
-            <div>
-              <a
-                href="mailto:construmed@gmail.com"
-                target="_blank"
-                rel="noopener"
-              >
-                <MainBarButton
-                  logo={
-                    <FiMail className="text-red text-6xl flex my-auto m-4" />
-                  }
-                  text="Correo electrónico"
-                  description="construccionesmed@gmail.com"
-                  classType="text-red text-2xl my-2"
-                />
-              </a>
-            </div>
+              </div>
+            </Fade>
+            <Fade big>
+              <div>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5492616708100"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <MainBarButton
+                    logo={
+                      <FaWhatsapp className="text-red text-6xl flex my-auto m-4" />
+                    }
+                    text="Whatsapp Chat"
+                    description="+5492616502121"
+                    classType="text-red text-2xl my-2"
+                  />
+                </a>
+              </div>
+            </Fade>
+            <Fade big>
+              <div>
+                <a
+                  href="mailto:construmed@gmail.com"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <MainBarButton
+                    logo={
+                      <FiMail className="text-red text-6xl flex my-auto m-4" />
+                    }
+                    text="Correo electrónico"
+                    description="construccionesmed@gmail.com"
+                    classType="text-red text-2xl my-2"
+                  />
+                </a>
+              </div>
+            </Fade>
           </div>
         </div>
         <section className="text-gray-400 bg-gray-900 body-font relative">
@@ -80,46 +87,48 @@ const Contacto = () => {
             ></iframe>
           </div>
           <div className="container px-5 py-24 mx-auto flex">
-            <div className="lg:w-1/3 md:w-1/2 bg-gray-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
-              <h2 className="text-black text-xl mb-1 font-extrabold title-font">
-                Contactanos!
-              </h2>
-              <p className="leading-relaxed mb-5 font-bold">
-                Envíanos tu consulta y nos pondremos en contacto con vos en
-                breve!
-              </p>
-              <div className="relative mb-4">
-                <label
-                  htmlFor="email"
-                  className="leading-7 text-sm text-gray-400 font-bold"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
+            <Fade right>
+              <div className="lg:w-1/3 md:w-1/2 bg-gray-900 shadow-md rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
+                <h2 className="text-black text-xl mb-1 font-extrabold title-font">
+                  Contactanos!
+                </h2>
+                <p className="leading-relaxed mb-5 font-bold">
+                  Envíanos tu consulta y nos pondremos en contacto con vos en
+                  breve!
+                </p>
+                <div className="relative mb-4">
+                  <label
+                    htmlFor="email"
+                    className="leading-7 text-sm text-gray-400 font-bold"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+                <div className="relative mb-4">
+                  <label
+                    htmlFor="message"
+                    className="leading-7 text-sm text-gray-400 font-bold"
+                  >
+                    Mensaje
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  ></textarea>
+                </div>
+                <button className="btn">Enviar</button>
+                <p className="text-xs text-gray-400 text-opacity-90 mt-3">
+                  Contrucciones MED
+                </p>
               </div>
-              <div className="relative mb-4">
-                <label
-                  htmlFor="message"
-                  className="leading-7 text-sm text-gray-400 font-bold"
-                >
-                  Mensaje
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                ></textarea>
-              </div>
-              <button className="btn">Enviar</button>
-              <p className="text-xs text-gray-400 text-opacity-90 mt-3">
-                Contrucciones MED
-              </p>
-            </div>
+            </Fade>
           </div>
         </section>
       </Layout>
